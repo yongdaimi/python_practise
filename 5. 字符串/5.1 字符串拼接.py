@@ -1,4 +1,4 @@
-# 连续书写形式拼接字符串
+# 连续书写形式拼接字符串 
 str1 = "http://www.baidu.com""http://wwww.taobao.com"
 print(str1)
 
