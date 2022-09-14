@@ -14,7 +14,3 @@ print(str1) # 输出：http://www.baidu.com 注意：右侧其实还是有制表
 str = "     http://www.baidu.com    \r\n"
 str1 = str.rstrip()
 print(str1) # 输出：     http://www.baidu.com
-
-
-
-
