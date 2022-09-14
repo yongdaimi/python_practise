@@ -14,6 +14,11 @@ print(num) # 输出-1
 num = str.find('.', 11, 17)
 print(num) # 输出16
 
+# rfind()从右侧开始检索，find()默认从左侧开始检索, 注意从右侧开始检索时，返回的索引号仍然是从左侧0开始的索引号，比如这里会返回16
+str = "http://www.baidu.com"
+num = str.rfind('.')
+print(num) # 输出16
+
 
 '''
 结论：
