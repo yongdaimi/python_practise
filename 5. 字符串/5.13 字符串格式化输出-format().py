@@ -14,3 +14,6 @@ print("十六进制形式:{:#X}".format(255)) # 输出：0XFF
 
 # 百分比形式
 print("百分比形式:{:.0%}".format(0.15))
+
+# 货币计数
+print("result is: {:,d}".format(10000000))
