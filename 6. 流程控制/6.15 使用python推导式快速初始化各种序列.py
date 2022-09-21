@@ -30,6 +30,9 @@ print(a)
 a = [(x, y) for x in range(5) for y in range(4)]
 print(a)
 '''
+这种写法相当于：
+for x in range(5)
+    for y in range(4)
 输出：
 [(0, 0), (0, 1), (0, 2), (0, 3), (1, 0), (1, 1), (1, 2), (1, 3), (2, 0), (2, 1), (2, 2), (2, 3), (3, 0), (3, 1), (3, 2), (3, 3), (4, 0), (4, 1), (4, 2), (4, 3)]
 '''
@@ -83,9 +86,21 @@ a = ["http://www.baidu.com", "http://www.qq.com", "http://www.microsoft.com"]
 b = {k:len(k) for k in a}
 print(b) # 输出：{'http://www.baidu.com': 20, 'http://www.qq.com': 17, 'http://www.microsoft.com': 24}
 
+print("------------------------------------------------------------------------")
 # 例二: 交换现有字典中的key和value ? 错误的写法，但是不知道哪里错了
-#c = {v:k for k in b.keys() for v in b.values()}
-# print(c) # 输出：{20: 'http://www.microsoft.com', 17: 'http://www.microsoft.com', 24: 'http://www.microsoft.com'}
+# c = {v:k for k in b.keys() for v in b.values()}
+
+# 错误原因：
+c = {}
+
+for k in b.keys():
+    for v in b.values():
+        c[v] = k
+        print(c)
+
+
+print(c) # 输出：{20: 'http://www.microsoft.com', 17: 'http://www.microsoft.com', 24: 'http://www.microsoft.com'}
+print("------------------------------------------------------------------------")
 
 # 例二: 简化写法
 c = {v:k for k, v in b.items()}
@@ -108,8 +123,8 @@ values = {x**2 for x in list1}
 print(values) # 输出：{64, 1, 4, 36, 9, 16, 49, 25}， set集合中的元素是无序的
 
 
-# 例二: 生成range中的偶数元素的乘方
-values = {x**2 for x in list1 if x % 2 == 0}
+# 例二: 生成range中的偶数元素的立方
+values = {x**3 for x in list1 if x % 2 == 0}
 print(values) # 输出：{16, 64, 4, 36}
 
 
