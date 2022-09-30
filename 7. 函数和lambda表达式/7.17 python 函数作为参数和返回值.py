@@ -60,15 +60,17 @@ a()                                             # # 输出：calling power() fun
 
 def test():
     print("call the test func")
-    return 0
+    return 20
 
 p = test
 print("type(p): ", type(p))
+print("p = ", p)
 
 print('----------------------------------')
 
 p = test()
 print("type(p): ", type(p))
+print("p = ", p)
 
 # 相当于是给print()函数取了一个别名
 p = print
