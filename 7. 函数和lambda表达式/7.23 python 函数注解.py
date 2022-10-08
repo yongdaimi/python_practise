@@ -8,11 +8,11 @@ print(foo.__annotations__) # 输出：{'x': <class 'str'>, 'y': <class 'str'>, '
 
 
 # 例二：
-def foo2(x:"必须是int类型", y:"必须是字符串类型")->"必须是int类型":
-    print("y: ", y)
-    return y
+# def foo2(x:"必须是int类型", y:"必须是字符串类型")->"必须是int类型":
+#     print("y: ", y)
+#     return y
 
-print(foo2.__annotations__) # 输出：{'x': '必须是int类型', 'y': '必须是字符串类型', 'return': '必须是int类型'}
+# print(foo2.__annotations__) # 输出：{'x': '必须是int类型', 'y': '必须是字符串类型', 'return': '必须是int类型'}
 
 '''
 注意要点：
