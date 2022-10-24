@@ -15,11 +15,11 @@ fish = Fish()
 fish.fishtype()
 
 # 覆盖父类的重名方法， 若子类中存在着与父类重名的方法时，则会覆盖
-jingyu = JingYu()
-jingyu.fishtype()
+jingyu = JingYu()                                               # 鱼不是哺乳动物
+jingyu.fishtype()                                               # 鲸鱼是哺乳动物
 
 # 仍然要调用父类的方法
-Fish.fishtype(jingyu)
+Fish.fishtype(jingyu)                                           # 鱼不是哺乳动物
 
 '''
 输出：
