@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "d:\python_practise\10. python 异常处理机制\10.10 使用traceback模块获取和保存异常信息.py", line 21, in <module>
+    first_method()
+  File "d:\python_practise\10. python 异常处理机制\10.10 使用traceback模块获取和保存异常信息.py", line 9, in first_method
+    second_method()
+  File "d:\python_practise\10. python 异常处理机制\10.10 使用traceback模块获取和保存异常信息.py", line 12, in second_method
+    thrid_method()
+  File "d:\python_practise\10. python 异常处理机制\10.10 使用traceback模块获取和保存异常信息.py", line 15, in thrid_method
+    forth_method()
+  File "d:\python_practise\10. python 异常处理机制\10.10 使用traceback模块获取和保存异常信息.py", line 18, in forth_method
+    raise UnknownException("unknown exception")
+UnknownException: unknown exception
+Traceback (most recent call last):
+  File "d:\python_practise\10. python 异常处理机制\10.10 使用traceback模块获取和保存异常信息.py", line 21, in <module>
+    first_method()
+  File "d:\python_practise\10. python 异常处理机制\10.10 使用traceback模块获取和保存异常信息.py", line 9, in first_method
+    second_method()
+  File "d:\python_practise\10. python 异常处理机制\10.10 使用traceback模块获取和保存异常信息.py", line 12, in second_method
+    thrid_method()
+  File "d:\python_practise\10. python 异常处理机制\10.10 使用traceback模块获取和保存异常信息.py", line 15, in thrid_method
+    forth_method()
+  File "d:\python_practise\10. python 异常处理机制\10.10 使用traceback模块获取和保存异常信息.py", line 18, in forth_method
+    raise UnknownException("unknown exception")
+UnknownException: unknown exception
